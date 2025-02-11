@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Khám phá du lịch sinh thái tại tỉnh Bến Tre, miền Tây Việt Nam với những vườn dừa xanh mát, sông nước hữu tình và văn hóa đậm đà bản sắc dân tộc.">
+    <title>Khám phá ẩm thực Bến Tre</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #E0FFFD, #8EE4AF);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        
+        header {
+            background: linear-gradient(135deg, #56ab2f, #a8e063);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            animation: slideIn 2s ease-in-out;
+        }
+
+        header h4 {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 180px;
+        }
+
+        
+        .hero {
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slideshow img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            opacity: 0;
+            animation: fadeIn 2s ease forwards;
+        }
+
+        .slideshow img.active {
+            opacity: 1;
+        }
+
+    
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        
+        section {
+            padding: 60px 20px;
+            background: rgba(255, 255, 255, 0.95);
+            margin: 30px auto;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        section h2 {
+            color: #008000;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        
+        .content {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #fff;
+            width: 300px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: left;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            color: #008000;
+            margin-top: 15px;
+        }
+
+        .card p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #008000;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .card a:hover {
+            background: #005500;
+        }
+
+        
+        .scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #56ab2f;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .scroll-top:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 30px 10px;
+            margin-top: 20px;
+        }
+
+        footer h4 {
+            margin-bottom: 10px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/vi/thumb/0/0d/Bi%E1%BB%83u_tr%C6%B0ng_t%E1%BB%89nh_B%E1%BA%BFn_Tre.svg/2048px-Bi%E1%BB%83u_tr%C6%B0ng_t%E1%BB%89nh_B%E1%BA%BFn_Tre.svg.png" alt="Logo Bến Tre" class="logo">
+        <h1>Khám phá ẩm thực Bến Tre</h1>
+        <h4>Khám phá ẩm thực xứ dừa với nhiều điều thú vị phía sau</h4>
+    </header>
+
+    <div class="hero">
+        <div class="slideshow">
+            <img src="img/header1.jpg" alt="Bản đồ Bến Tre" class="active">
+            <img src="img/header2.jpeg" alt="Khung cảnh Bến Tre">
+        </div>
+    </div>
+
+    <section id="gioithieu">
+        <h2>Về Bến Tre</h2>
+        <h4>
+             Bến Tre xứ dừa thân quen <br>
+                Dừa xanh bóng mát, êm đềm sông quê. <br>
+                Mênh mang nước chảy bốn bề, <br>
+                Chèo thuyền rẽ sóng tràn trề tình thân. <br>
+                <br>
+                Cồn Phụng lặng lẽ xa gần, <br>
+                Đất lành trái ngọt ân cần chào ai. <br>
+                Hương dừa thoảng gió bay dài, <br>
+                Gợi bao kỷ niệm miệt mài trong tim. <br>
+                <br>
+                Về đây gác lại nỗi niềm, <br>
+                Giữa miền sông nước dịu êm giấc nồng. <br>
+                Bến Tre – chân chất, mặn nồng,<br>
+                Nơi tình yêu đất hoài mong ngày về. <br>
+        </h4>
+    </section>
+
+    <section id="diadiem">
+        <h2>Các món đặc sản tiêu biểu</h2>
+        <div class="content">
+            <div class="card">
+                <img src="img/body1.webp" alt="Bánh xèo">
+                <h3>Bánh xèo</h3>
+                <p>Bánh xèo – món ăn truyền thống Việt Nam, giòn rụm, vàng ươm, hòa quyện hương vị của tôm, thịt và giá đỗ, ăn kèm rau sống và nước chấm chua ngọt.</p>
+                <a href="body1.html">Tìm hiểu thêm</a>
+            </div>
+            <div class="card">
+                <img src="img/body2.jpg" alt="Rau câu dừa">
+                <h3>Rau câu dừa</h3>
+                <p>Rau câu dừa – món tráng miệng thanh mát, kết hợp vị ngọt dịu của nước dừa tươi và lớp thạch mềm mịn, mang đậm hương vị miền nhiệt đới.</p>
+                <a href="body2.html">Tìm hiểu thêm</a>
+            </div>
+            <div class="card">
+                <img src="img/body3.jpg" alt="Gỏi củ hủ dừa tôm thịt">
+                <h3>Gỏi củ hủ dừa tôm thịt</h3>
+                <p>Gỏi củ hủ dừa tôm thịt – kết hợp vị giòn ngọt của củ hủ dừa, vị đậm đà của tôm thịt và nước mắm chua ngọt, tạo nên hương vị khó quên của miền Tây.</p>
+                <a href="body3.html">Tìm hiểu thêm</a>
+            </div>
+        </div>
+    </section>
+
+    <button class="scroll-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">&uarr;</button>
+
+     <footer>
+        <h4>Nhóm 3 12A1 </h4>
+        <br>
+        <hr>
+        <div style="text-align: left;">
+            <h2 style="font-size: 1.8rem; color: bisque;">Liên Hệ</h2>
+            <i class="fa-solid fa-envelope"></i><p>Email: pky45327@gmail.com</p>
+            <i class="fa-solid fa-phone"></i><p>Điện thoại: +84 795 999  </p>
+        </div>
+        <hr>
+    </footer>
+
+    <script>
+        
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slideshow img');
+        setInterval(() => {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }, 3000);
+    </script>
+</body>
+</html>

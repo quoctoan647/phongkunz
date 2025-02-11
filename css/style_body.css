@@ -1,0 +1,198 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: wheat;
+    color: #333;
+    overflow-x: hidden;
+    position: relative;
+    background: #e0f7fa;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    margin-top: 50px;
+    color: #333;
+    text-transform: uppercase;
+    padding: 20px;
+    background-color: #42d8ec;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+h1:hover {
+    transform: scale(1.1);
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+.text, .image {
+    width: 48%;
+    transition: transform 0.3s ease;
+}
+
+.text p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.image:hover img {
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+a {
+    display: inline-block;
+    margin: 20px;
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a:hover {
+    background-color: #333;
+    color: white;
+}
+
+.comment-section {
+    margin-top: 30px;
+    padding: 20px;
+    border-top: 2px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+.comment-box {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.response-button, .submit-button {
+    padding: 5px 10px;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.response-button:hover, .submit-button:hover {
+    background-color: #666;
+}
+
+.comment-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.response {
+    margin-left: 20px;
+    font-style: italic;
+}
+
+.response-input {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.submit-response-button {
+    padding: 5px 10px;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.submit-response-button:hover {
+    background-color: #666;
+}
+
+.comment {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comment-body {
+    margin-top: 5px;
+}
+
+.search-box {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+
+.heart {
+    font-size: 20px;
+    cursor: pointer;
+    color: #ff5c8d;
+}
+
+.heart.liked {
+    color: #e60000;
+}
+footer {
+    text-align: center;
+    background: #0f4c75;
+    color: white;
+    padding: 15px 0;
+    position: relative;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #d4f1f4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

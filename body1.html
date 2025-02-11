@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bánh Xèo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #ffecd2, #fcb69f);
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        
+        h1 {
+            text-align: center;
+            padding: 20px;
+            color: white;
+            background-color: #ff7f50;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            animation: fadeIn 2s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 30px 50px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .content:hover {
+            transform: scale(1.03);
+        }
+
+        /* Văn bản */
+        .text, .image {
+            flex-basis: 48%;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .video-container {
+            text-align: center;
+            margin: 40px auto;
+        }
+
+        
+        .buy-link {
+            display: inline-block;
+            background-color: #f08080;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        .buy-link:hover {
+            background-color: #ff6347;
+        }
+
+        .comment-section {
+            margin: 40px 50px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .comment-box {
+            margin: 10px 0;
+        }
+
+        .submit-button {
+            background-color: #f08080;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-button:hover {
+            background-color: #ff6347;
+        }
+
+        footer {
+            background-color: #ff6347;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        
+        a {
+            color: #ff6347;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>👉 Bánh Xèo 👈</h1>
+
+    
+    <div class="content">
+        <div class="text">
+            <p>
+                <strong>Nguyên liệu:</strong>
+                <br>Phần vỏ bánh:
+                <br>200g bột bánh xèo 
+                <br>300ml nước cốt dừa 
+                <br>200ml nước lọc 
+                <br>1/2 thìa cà phê bột nghệ 
+                <br>Hành lá thái nhỏ 
+                <br>1/4 thìa cà phê muối 
+                <br><br>
+                <strong>Phần nhân:</strong>
+                <br>200g củ hủ dừa
+                <br>150g thịt ba chỉ
+                <br>150g tôm
+                <br>100g giá đỗ
+                <br>1 củ hành tây
+                <br>Gia vị: muối, tiêu, đường, nước mắm
+                <br><br>
+                <strong>Rau ăn kèm:</strong> Rau thơm, xà lách, cải xanh
+                <br><strong>Nước chấm:</strong> Nước mắm, đường, nước cốt chanh
+            </p>
+            <a href="https://www.bachhoaxanh.com/" class="buy-link" target="_blank">🔗 Mua nguyên liệu tại đây</a>
+        </div>
+        <div class="image">
+            <img src="img/body1.webp" alt="Bánh xèo">
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="image">
+            <img src="img/banh_xeo.jpg" alt="Bánh xèo giòn">
+        </div>
+        <div class="text">
+            <p>
+                <strong>Cách làm:</strong>
+                <br>1. Chuẩn bị bột bánh: Trộn đều bột, nước cốt dừa và nước lọc. 
+                <br>2. Xào nhân: Phi thơm hành tím, xào thịt, tôm và rau củ.
+                <br>3. Đổ bánh xèo: Múc bột, nghiêng chảo cho bột tráng đều, cho nhân vào giữa rồi gấp đôi bánh.
+                <br>4. Nước chấm: Hòa nước mắm, đường, tỏi, chanh thành nước chấm chua ngọt.
+                <br><strong>Thưởng thức:</strong> Dùng kèm rau sống và nước chấm.
+            </p>
+        </div>
+    </div>
+
+    <!-- Video -->
+    <div class="video-container">
+        <iframe 
+            width="850" 
+            height="500" 
+            src="https://www.youtube.com/embed/NK2j4Bpzgq0" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+        </iframe>
+    </div>
+    <a href="index.html">Quay lại trang chính</a>
+    <div class="comment-section">
+    <h2>Bình luận</h2>
+
+    
+    <div class="comment-box">
+        <input type="text" id="nameInput" placeholder="Nhập tên" />
+    </div>
+    
+    
+    <div class="comment-box">
+        <input type="text" id="commentBox" placeholder="Nhập bình luận" />
+    </div>
+    
+    <!-- Nút đăng bình luận -->
+    <div class="comment-actions">
+        <button class="submit-button" onclick="saveComment()">Đăng</button>
+    </div> <br>
+
+    <div id="commentsList">
+        
+    </div>
+</div>
+
+<script>
+    
+    const comments = [
+        { name: "An", text: "Bài viết rất hay, cảm ơn bạn!" },
+        { name: "Phương", text: "Tôi rất thích nội dung này, tiếp tục phát huy nhé." },
+        { name: "Nhi", text: "Có ai có câu hỏi về chủ đề này không? Thảo luận cùng mình!" }
+    ];
+
+    
+    function displayComments() {
+        const commentsList = document.getElementById("commentsList");
+        commentsList.innerHTML = ""; 
+        comments.forEach((comment, index) => {
+            // Tạo phần tử HTML cho từng bình luận
+            const commentDiv = document.createElement("div");
+            commentDiv.className = "comment";
+            commentDiv.innerHTML = `
+                <p><strong>${comment.name}:</strong> ${comment.text}</p>
+            `;
+            commentsList.appendChild(commentDiv);
+        });
+    }
+
+    
+    function saveComment() {
+        const nameInput = document.getElementById("nameInput");
+        const commentBox = document.getElementById("commentBox");
+        const name = nameInput.value.trim(); 
+
+        if (name && commentText) {
+        
+            comments.push({ name, text: commentText });
+
+            
+            displayComments();
+
+            
+            nameInput.value = "";
+            commentBox.value = "";
+        } else {
+            alert("Vui lòng nhập tên và nội dung bình luận!");
+        }
+    }
+
+    
+    window.onload = function () {
+        displayComments();
+    };
+</script>
+
+
+
+
+    <footer>
+        <h4>Nhóm 3 12A1 </h4>
+        <br>
+        <hr>
+        <div style="text-align: left;">
+            <h2 style="font-size: 1.8rem; color: bisque;">Liên Hệ</h2>
+            <i class="fa-solid fa-envelope"></i><p>Email: pky45327@gmail.com</p>
+            <i class="fa-solid fa-phone"></i><p>Điện thoại: +84 795 999 283</p>
+        </div>
+        <hr>
+    </footer>
+</body>
+</html>
